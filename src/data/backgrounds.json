@@ -1,6 +1,6 @@
 [
     {
-        "src": "backgrounds/bg1.jpg",
+        "src": "backgrounds/bg1.webp",
         "alt": "Construction Plans and Helmet Background",
         "h1": "Powering Progress in Energy & Industry",
         "p": "AE Solutions delivers engineering excellence across Zimbabwe’s vital sectors",
@@ -8,7 +8,7 @@
         "pstyle": "text-lg md:text-5xl px-8 mt-4 text-white text-shadow-lg drop-shadow-md pointer-events-none"
     },
     {
-        "src": "backgrounds/bg2.jpg",
+        "src": "backgrounds/bg2.webp",
         "alt": "Building Under Construction",
          "h1": "Infrastructure That Builds Communities",
         "p": "From roads to public works, we shape the future with precision and care",
@@ -16,7 +16,7 @@
         "pstyle": "text-white text-lg md:text-3xl text-shadow-lg drop-shadow-lg mb-6"
     },
     {
-        "src": "backgrounds/bg3.jpg",
+        "src": "backgrounds/bg3.webp",
         "alt": "Construction Crane at Sunset",
          "h1": "Sustainable Solutions for Tomorrow",
         "p": "Environmental protection meets innovation in every design we deliver",
