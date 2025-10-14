@@ -3,11 +3,12 @@ import PageHeader from '../components/PageHeader2';
 import BgCarousel from '../components/BgCarousel';
 import backgrounds from '../data/backgrounds';
 import { Helmet } from 'react-helmet';
-import CompanyOverview from '../components/CompanyOverview';
 import MissionGrid from '../components/MissionGrid';
 import Section from '../components/Section';
 import Heading1 from '../components/assets/Heading1';
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import Footer from '../components/Footer2';
+import ScrollTop from '../components/assets/ScrollTop';
 
 function Home() {
   const sectionVariants = {
@@ -44,7 +45,9 @@ function Home() {
       viewport={{ once: true, amount: 0.15 }}
       transition={reduce ? { duration: 0 } : { duration: 0.6, ease: 'easeOut', delay: 0.6 }}
         >
+          <div className='mx-auto w-fit'>
       <Heading1 className='md:text-4xl text-2xl text-white bg-white font-semibold mb-10 mt-4 md:mt-8' title='Engineering with Purpose'/>
+      </div>
       <p className="max-w-full mx-auto md:text-2xl text-lg text-white">
         AE Solutions is a multidisciplinary engineering and consulting firm delivering high-quality solutions across energy, infrastructure, and environmental sectors. Our work is rooted in integrity, collaboration, and a vision for a better future.
       </p>
@@ -56,7 +59,9 @@ function Home() {
       </button>
       </motion.section>
     </Section>
+    <ScrollTop />
     <MissionGrid/>
+    <Footer/>
     </>
   );
 }

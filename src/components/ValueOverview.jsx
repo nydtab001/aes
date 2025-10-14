@@ -20,7 +20,7 @@ export default function OverviewWithValues() {
           ))}
         </div>
       </div> */}
-      <img src="/Managing_director.jpg" alt="Managing Director" />
+      <img src="/Managing_director.png" alt="Managing Director" className="w-auto h-auto"/>
     </section>
   );
 }

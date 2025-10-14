@@ -37,9 +37,11 @@ export default function MissionGrid() {
   const reduce = useReducedMotion()
 
   return (
-    <section className="py-6 md:mx-10 mx-4">
+    <section className="py-6 md:mx-10 md:mx-4">
       <div className="max-w-full mx-auto">
-        <Heading1 className='md:text-5xl text-2xl text-indigo-950 bg-indigo-950 font-semibold md:mb-16 mb-4 mt-4 md:mt-16' title='Services'/>
+        <div className='mx-auto w-fit'>
+        <Heading1 className='md:text-5xl text-2xl text-indigo-950 bg-indigo-950 font-semibold md:mb-16 mb-8 mt-4 md:mt-16' title='Services'/>
+        </div>
        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
   {services.map((s, i) => (
     <div className={`flex flex-col md:flex-row ${i % 2 === 0 ? 'md:flex-row-reverse' : ''} items-stretch w-full`}>

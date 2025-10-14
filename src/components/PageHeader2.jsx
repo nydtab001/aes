@@ -6,7 +6,6 @@ import MobileDropdown from "./MobileDropdown";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 
-
 function renderDropDown(open,setopen, subopen, setsub, item, idx, dropdownContent){
   const isactive = open === item.label
   const subactive = subopen === dropdownContent[item.label].label
@@ -70,6 +69,9 @@ function renderDropDown(open,setopen, subopen, setsub, item, idx, dropdownConten
 
 export default function PageHeader() {
 
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   const navItems = [
             { label: "HOME", href: "/" },
             { label: "ABOUT", href: "/about" },
@@ -120,7 +122,7 @@ const [scrolled, setScrolled] = useState(false);
 
 useEffect(() => {
   const handleScroll = () => {
-    setScrolled(window.scrollY > 10); // adjust threshold as needed
+    setScrolled(window.scrollY > 600); // adjust threshold as needed
   };
 
   window.addEventListener("scroll", handleScroll);
@@ -136,9 +138,9 @@ useEffect(() => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.6, ease: "easeOut" }} 
-    className={` z-[999] fixed top-0 w-full border-none border-gray-200 transition-colors duration-500 ease-in-out ${!mobileOpen ? 'hover:bg-white/60' : ''}
+    className={` z-[999] fixed top-0 w-full border-none border-gray-200 shadow-md transition-colors duration-500 ease-in-out ${(!mobileOpen && isHome && !scrolled ) ? 'hover:bg-white/60' : ''}
     ${
-    (scrolled || mobileOpen) ? "bg-white/100" : "bg-white/0"
+    (scrolled || mobileOpen || !isHome) ? "bg-white/100" : "bg-white/0"
   }`}>
       <div className="max-w-7xl mx-auto flex items-center md:px-2 px-8 justify-between py-3">
         {/* Logo Section */}
