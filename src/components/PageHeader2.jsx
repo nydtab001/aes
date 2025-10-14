@@ -122,7 +122,8 @@ const [scrolled, setScrolled] = useState(false);
 
 useEffect(() => {
   const handleScroll = () => {
-    setScrolled(window.scrollY > 600); // adjust threshold as needed
+    const threshold = window.innerHeight * 0.5; // 50% of viewport height
+    setScrolled(window.scrollY > threshold); // adjust threshold as needed
   };
 
   window.addEventListener("scroll", handleScroll);
