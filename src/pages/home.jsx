@@ -25,8 +25,7 @@ function Home() {
           Alauwndy Engineering Solutions
         </title>
         <link rel="preload" as="image" href="backgrounds/bg1.webp" />
-        <link rel="preload" as="image" href="backgrounds/bg2.webp" />
-        <link rel="preload" as="image" href="backgrounds/bg3.webp" />
+        <link rel="preload" as="image" href="aeslogo.png" />
       </Helmet>
     <PageHeader />
     <section className="relative md:mt-[0px] mt-[0px] max-sm:h-[400px] h-screen text-center">
