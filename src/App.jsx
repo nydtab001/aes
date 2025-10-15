@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import LoadingScreen from './components/assets/LoadingScreen.jsx'
+import { AnimatePresence } from 'framer-motion'
 
 
 function App() {
@@ -13,25 +14,25 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Simulate a 2-second loading time
+    }, 3000); // Simulate a loading time
 
     return () => clearTimeout(timer); // Cleanup the timer on unmount
   }, []);
 
-  if (loading) {
-    return <LoadingScreen />;
-  }
-
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>} />
-      </Routes>
-    </BrowserRouter>
+      <LoadingScreen isVisible={loading} />
+
+      
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </BrowserRouter>
     </>
-  )
+  );
+
 }
 
 export default App
