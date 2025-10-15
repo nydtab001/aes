@@ -48,7 +48,7 @@ function Home() {
       <Heading1 width='max-sm:w-0 md:w-6 lg:w-24' className='lg:text-4xl md:text-3xl text-2xl text-white bg-white font-semibold mb-10 mt-4 md:mt-8' title='Engineering with Purpose'/>
       </div>
       <p className="max-w-full mx-auto md:text-2xl text-lg text-white">
-        AE Solutions is a multidisciplinary engineering and consulting firm delivering high-quality solutions across energy, infrastructure, and environmental sectors. Our work is rooted in integrity, collaboration, and a vision for a better future.
+        AE Solutions is a multidisciplinary engineering and consulting firm delivering high-quality solutions across energy, infrastructure, construction, and environmental sectors. Our work is rooted in integrity, collaboration, and a vision for a better future.
       </p>
       <button
         className="mt-8 bg-transparent text-white px-6 py-3 font-semibold border-2 rounded-md border-white drop-shadow-lg transition-colors duration-200 hover:bg-white hover:text-red-600"
