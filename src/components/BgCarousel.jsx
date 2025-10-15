@@ -46,7 +46,7 @@ function BgCarousel({ slides, children }) {
                     key={index}
                     className={`w-full h-full object-cover`}
                     loading={index === 0 ? "eager" : "lazy"}
-                    decoding="async"
+                    decoding={index === 0 ? "sync" : "async"}
                 />
                 </div>
             ))}
