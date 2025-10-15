@@ -135,7 +135,7 @@ partners, and employees.
 
 {/* Values */}
 <section
-  className="relative h-[400px] max-[1220px]:h-[500px] mb-6 md:mb-10 text-neutral-800 overflow-hidden"
+  className="relative h-[400px] max-[1220px]:h-[580px] mb-6 md:mb-10 text-neutral-800 overflow-hidden"
   style={{
     backgroundImage: 'url(/teamwork.jpg)',
     backgroundSize: 'cover',
