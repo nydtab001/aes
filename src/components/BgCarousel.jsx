@@ -42,6 +42,8 @@ function BgCarousel({ slides, children }) {
                 <div key={index} className="w-full h-full flex-shrink-0">
                 <img
                     src={slide.src}
+                    srcSet={slide.srcset}
+                    sizes={slide.sizes}
                     alt={slide.alt}
                     key={index}
                     className={`w-full h-full object-cover`}
