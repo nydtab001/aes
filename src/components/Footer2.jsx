@@ -1,7 +1,7 @@
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import logo from '/aeslogo.png';
-import { BsTelephone } from "react-icons/bs";
+import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 
 
@@ -37,8 +37,11 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact</h3>
-          <p className="text-lg text-neutral-300 hover:text-yellow-400 transition"><a href="tel:+263 77 220 0855" className="flex items-center gap-2"><BsTelephone /> +263 77 220 0855</a></p>
-          <p className="text-lg text-neutral-300 hover:text-yellow-400 transition"><a href="mailTo:aes@aes.com" className="flex items-center gap-2"><MdOutlineEmail />aes@aes.com</a></p>
+          <ul className="text-lg text-neutral-300 space-y-1">
+          <li className="hover:text-yellow-400 transition"><a href="tel:+263 77 220 0855" className="flex items-center gap-2"><BsTelephone /> +263 77 220 0855</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="https://wa.me/263714369620" className="flex items-center gap-2"><BsWhatsapp /> +263 71 436 9620</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="mailTo:info@aeszim.co.zw " className="flex items-center gap-2"><MdOutlineEmail />info@aeszim.co.zw </a></li>
+          </ul>
         </div>
 
         {/* Certifications & Newsletter */}
@@ -66,10 +69,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center max-sm:space-x-4 sm:space-x-10 mt-12">
-            <a href="#" className="hover:text-yellow-400 transition text-2xl"><FaFacebookF /></a>
-            <a href="#" className="hover:text-yellow-400 transition text-2xl"><BsInstagram /></a>
-            <a href="#" className="hover:text-yellow-400 transition text-2xl"><BsTwitterX /></a>
-            <a href="#" className="hover:text-yellow-400 transition text-2xl"><FaTiktok /></a>
+            <a href="https://www.facebook.com/profile.php?id=61576338960910" className="hover:text-yellow-400 transition text-2xl"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/alauwndyengpvt/" className="hover:text-yellow-400 transition text-2xl"><BsInstagram /></a>
+            <a href="https://x.com/alauwndyengpvt" className="hover:text-yellow-400 transition text-2xl"><BsTwitterX /></a>
+            <a href="https://www.tiktok.com/@alauwndyengpvt" className="hover:text-yellow-400 transition text-2xl"><FaTiktok /></a>
       </div>
 
       {/* Bottom Line */}
