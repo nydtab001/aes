@@ -66,7 +66,7 @@ achieved the desired success.
 
      {/* Vision */}
    <section
-  className="relative h-[400px] max-[1220px]:h-[500px] md:mb-10 text-neutral-800 overflow-hidden"
+  className="relative h-[630px] max-[1220px]:h-[740px] text-neutral-800 overflow-hidden"
   style={{
     backgroundImage: 'url(/our_vision.jpg)',
     backgroundSize: 'cover',
@@ -99,7 +99,7 @@ achieved the desired success.
 
  {/* Mission */}
 <section
-  className="relative h-[580px] max-[1220px]:h-[740px] md:mb-10 text-neutral-800 overflow-hidden"
+  className="relative h-[630px] max-[1220px]:h-[740px] text-neutral-800 overflow-hidden"
   style={{
     backgroundImage: 'url(/our_mission.jpg)',
     backgroundSize: 'cover',
@@ -135,7 +135,7 @@ partners, and employees.
 
 {/* Values */}
 <section
-  className="relative h-[400px] max-[1220px]:h-[580px] mb-6 md:mb-10 text-neutral-800 overflow-hidden"
+  className="relative h-[630px] max-[1220px]:h-[740px] text-neutral-800 overflow-hidden"
   style={{
     backgroundImage: 'url(/teamwork.jpg)',
     backgroundSize: 'cover',
