@@ -53,8 +53,7 @@ export default function MissionGrid() {
   />
 
   {/* Card */}
-  <div className={`w-full md:w-1/2 ${i % 2 === 0 ? 'bg-indigo-950' : 'bg-red-600'} text-white p-8 flex flex-col justify-center text-center max-md:min-h-[300px] h-auto md:h-[500px]`}>
-   <AnimatePresence>
+  <div className={`relative overflow-hidden w-full md:w-1/2 ${i % 2 === 0 ? 'bg-indigo-950' : 'bg-red-600'} text-white p-8 flex flex-col justify-center text-center max-md:min-h-[300px] h-auto md:h-[500px]`}>
     <motion.div
         initial={i%2==0 ? { opacity: 0, x: -40 }: { opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' } }}
@@ -69,7 +68,6 @@ export default function MissionGrid() {
     <br/>
     <p className='md:text-2xl text-lg whitespace-normal break-words'>{s.desc}</p>
     </motion.div>
-    </AnimatePresence>
   </div>
 </div>
 
