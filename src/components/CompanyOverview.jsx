@@ -8,8 +8,8 @@ export default function CompanyOverview() {
   const reduce = useReducedMotion()
 
   return (
-      <div className="w-full flex max-[1300px]:flex-col justify-between bg-indigo-950 px-6 sm:px-8 md:px-16 lg:px-40 text-left">
-        <AnimatePresence>
+      <div className="relative overflow-hidden w-full flex max-[1300px]:flex-col justify-between bg-indigo-950 px-6 sm:px-8 md:px-16 lg:px-40 text-left">
+        <AnimatePresence c>
             <motion.div
             initial={{opacity: 0, x: -60}}
             whileInView={{opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut"}}}
