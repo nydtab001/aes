@@ -6,6 +6,7 @@ import CompanyOverview from "../components/CompanyOverview";
 import SectionHeading from "../components/SectionHeading2";
 import Heading1 from "../components/assets/Heading1";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import ScrollTop from "../components/assets/ScrollTop";
 
 function About() {
 
@@ -167,6 +168,7 @@ partners, and employees.
     </motion.div>
   </div>
 </section>
+<ScrollTop/>
     <Footer />
     </>
   );

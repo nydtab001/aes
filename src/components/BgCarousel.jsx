@@ -3,12 +3,49 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
+function ResponsiveImage({ slide }) {
+  const isMobile = useMediaQuery({ maxWidth: 480 });
+  const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 769 });
+
+  const imageSrc = isMobile
+    ? slide.src2
+    : isTablet
+    ? slide.src2
+    : slide.src;
+
+  return (
+    <img
+      src={imageSrc}
+      alt={slide.alt}
+      className="w-full h-full object-cover"
+      loading="eager"
+      decoding="sync"
+    />
+  );
+}
 
 function BgCarousel({ slides, children }) {
     const navigate = useNavigate();
 
     const [currentIndex, setCurrentIndex] = useState(0);
+  const autoplayRef = useRef(null);
+
+  const startAutoplay = () => {
+    if (autoplayRef.current) clearInterval(autoplayRef.current);
+    autoplayRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 8000);
+  };
+
+  const resetAutoplay = () => {
+    // restart the interval so manual navigation pauses then resumes autoplay
+    startAutoplay();
+  }
     const previousSlide = () => {
         if (currentIndex === 0) setCurrentIndex(slides.length - 1);
         else setCurrentIndex(currentIndex - 1);
@@ -22,14 +59,12 @@ function BgCarousel({ slides, children }) {
     }
 
     useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
-  }, 8000); // Change every 5 seconds
-
-  return () => clearInterval(interval); // Cleanup on unmount
-}, [slides.length]);
+      // start autoplay on mount and whenever slides.length changes
+      startAutoplay();
+      return () => {
+        if (autoplayRef.current) clearInterval(autoplayRef.current);
+      }
+    }, [slides.length]);
 
 
     return (
@@ -39,17 +74,8 @@ function BgCarousel({ slides, children }) {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
             {slides.map((slide, index) => (
-                <div key={index} className="w-full h-full flex-shrink-0">
-                <img
-                    src={slide.src}
-                    srcSet={slide.srcset}
-                    sizes={slide.sizes}
-                    alt={slide.alt}
-                    key={index}
-                    className={`w-full h-full object-cover`}
-                    loading={index === 0 ? "eager" : "lazy"}
-                    decoding={index === 0 ? "sync" : "async"}
-                />
+                <div key={index} className={"w-full h-full flex-shrink-0"}>
+                <ResponsiveImage slide={slide} />
                 </div>
             ))}
             {children}
@@ -64,7 +90,7 @@ function BgCarousel({ slides, children }) {
         </div>
         <div className="absolute bottom-4 w-full flex justify-center gap-2 z-40">
            {slides.map((s,i) => (
-            <div key={i} onClick={() => setCurrentIndex(i)} className={`max-sm:h-3 max-sm:w-3 h-5 w-5 rounded-full cursor-pointer ${i===currentIndex ? 'bg-white' : 'bg-none border-2'}`}></div>
+            <div key={i} onClick={() => { setCurrentIndex(i); resetAutoplay(); }} className={`max-sm:h-3 max-sm:w-3 h-5 w-5 rounded-full cursor-pointer ${i===currentIndex ? 'bg-white' : 'bg-none border-2'}`}></div>
            ))}
         </div>
         </div>
