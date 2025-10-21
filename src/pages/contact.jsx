@@ -99,7 +99,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="bg-white p-6 flex flex-col h-full">
+            <form onSubmit={handleSubmit} className="bg-white p-6 max-sm:px-0 flex flex-col h-full">
               <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
@@ -140,12 +140,12 @@ export default function Contact() {
       </Section>
 
       <Section className="bg-white">
-        <div className="max-w-7xl mx-auto text-center pb-12 px-4">
+        <div className="max-w-7xl mx-auto text-center pb-12">
             <div className='mx-auto w-fit'>
-          <Heading1 width='max-sm:w-0 w-24' className="text-3xl md:text-4xl text-indigo-950" title="Other ways to reach us" />
+          <Heading1 width='max-sm:w-0 w-24' className="max-sm:text-2xl md:text-4xl text-indigo-950" title="Other ways to reach us" />
             </div>
 
-          <div className="mt-6 w-full rounded-lg overflow-hidden shadow-sm">
+          <div className="mt-6 w-full overflow-hidden shadow-sm">
             <iframe
               title="AES location on Google Maps"
               src="https://www.google.com/maps?q=CABS+building+L.+Takawira+and+J.+Moyo+St+Bulawayo+Zimbabwe&output=embed"
