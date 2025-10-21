@@ -1,8 +1,11 @@
 
-const SectionHeading = ({ title, subtitle, bg="bg-slate-800", bgimg="/about_hero.jpg", colour="text-white" }) => {
+const SectionHeading = ({ title, subtitle, bg = "bg-slate-800", bgimg = "/about_hero.jpg", colour = "text-white", fixedBackground = true }) => {
+  const bgStyle = bgimg
+    ? { backgroundImage: `url(${bgimg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: fixedBackground ? 'fixed' : 'scroll' }
+    : {};
+
   return (
-    <div className={`mt-[73px] md:mt-[105px] ${bg} border-b-[8px] border-red-600`}
-    style={bgimg ? { backgroundImage: `url(${bgimg})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
+    <div className={`mt-[73px] md:mt-[105px] ${bg} border-b-[8px] border-red-600`} style={bgStyle}>
       <div className={`bg-indigo-950 bg-opacity-50 w-full h-full pb-8 max-md:pt-6 pt-14`}>
     <div className="py-6 md:py-[100px] max-w-7xl mx-auto md:px-16 px-8">
       <h1 className={`text-3xl md:text-7xl font-bold text-left ${colour}`}>{title}</h1>

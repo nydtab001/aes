@@ -3,8 +3,12 @@ import './App.css'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
+import Contact from './pages/contact.jsx'
+import Services from './pages/services.jsx'
+import Projects from './pages/projects.jsx'
 import LoadingScreen from './components/assets/LoadingScreen.jsx'
 import { AnimatePresence } from 'framer-motion'
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -25,9 +29,13 @@ function App() {
 
       
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services/>} />
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
         </BrowserRouter>
     </>
