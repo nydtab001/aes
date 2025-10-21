@@ -6,6 +6,7 @@ import SectionHeading from '../components/SectionHeading2'
 import Heading1 from '../components/assets/Heading1'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
+import ScrollTop from '../components/assets/ScrollTop'
 
 export default function Contact() {
   const reduce = useReducedMotion()
@@ -69,7 +70,8 @@ export default function Contact() {
       <Helmet>
         <title>Alauwndy Engineering Solutions - Contact</title>
       </Helmet>
-      <PageHeader />
+  <PageHeader />
+  <ScrollTop />
       <SectionHeading title="CONTACT" bg="bg-white" />
 
       <Section className="bg-white">
