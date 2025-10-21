@@ -128,8 +128,8 @@ function Services() {
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
                                     className="group relative"
                                 >
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                                    <div className="relative bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
+                                    <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                                    <div className="relative bg-white shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
                                         <div className="aspect-[16/10] overflow-hidden bg-gray-100 relative flex-shrink-0">
                                             <img
                                                 src={svc.image}
@@ -206,7 +206,6 @@ function Services() {
                                 href="/contact"
                                 className="relative inline-flex items-center bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 font-bold rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                             >
-                                <span className="mr-2">📋</span>
                                 Request a Quote
                                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

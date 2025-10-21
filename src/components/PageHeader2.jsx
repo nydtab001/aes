@@ -77,6 +77,8 @@ export default function PageHeader() {
             { label: "ABOUT", href: "/about" },
             { label: "SERVICES", href: "/services" },
             { label: "PROJECTS", href: "/projects" },
+            { label: "STRENGTHS", href: "/strengths" },
+            { label: "BUSINESS AREAS", href: "/business-areas" },
             { label: "CONTACT", href: "/contact" },
             // { label: "Give", href: "/give", className: "bg-amber-600 text-white px-4 py-2 rounded-full hover:bg-amber-700 transition" }
         ];

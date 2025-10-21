@@ -6,6 +6,8 @@ import About from './pages/about.jsx'
 import Contact from './pages/contact.jsx'
 import Services from './pages/services.jsx'
 import Projects from './pages/projects.jsx'
+import Strengths from './pages/strengths.jsx'
+import BusinessAreas from './pages/business-areas.jsx'
 import LoadingScreen from './components/assets/LoadingScreen.jsx'
 import { AnimatePresence } from 'framer-motion'
 import ScrollToTop from './components/ScrollToTop';
@@ -36,6 +38,8 @@ function App() {
             <Route path="/services" element={<Services/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/contact" element={<Contact/>} />
+            <Route path="/strengths" element={<Strengths/>} />
+            <Route path="/business-areas" element={<BusinessAreas/>} />
           </Routes>
         </BrowserRouter>
     </>
