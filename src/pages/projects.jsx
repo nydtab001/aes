@@ -10,6 +10,20 @@ import { useState, useRef, useEffect } from "react";
 
 function Projects() {
     const reduce = useReducedMotion();
+    const [isSmall, setIsSmall] = useState(false);
+
+    useEffect(() => {
+        // detect small screens (mobile)
+        const m = window.matchMedia('(max-width: 767px)');
+        setIsSmall(m.matches);
+        const onChange = (e) => setIsSmall(e.matches);
+        if (m.addEventListener) m.addEventListener('change', onChange);
+        else m.addListener(onChange);
+        return () => {
+            if (m.removeEventListener) m.removeEventListener('change', onChange);
+            else m.removeListener(onChange);
+        };
+    }, []);
     const [expandedProject, setExpandedProject] = useState(null);
 
     const sectionVariants = {
@@ -121,10 +135,10 @@ function Projects() {
             <Section className="bg-white">
                 <motion.div
                     variants={sectionVariants}
-                    initial="hidden"
+                    initial={isSmall ? 'visible' : 'hidden'}
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.15 }}
-                    transition={reduce ? { duration: 0 } : undefined}
+                    viewport={{ once: true, amount: isSmall ? 0.01 : 0.15 }}
+                    transition={reduce ? { duration: 0 } : (isSmall ? { duration: 0.3 } : undefined)}
                     className="max-w-7xl mx-auto"
                 >
                     <div className="mx-auto w-fit mb-8">
