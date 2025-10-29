@@ -98,7 +98,7 @@ function BgCarousel({ slides, children }) {
     <motion.div
        key={slides[currentIndex].h1} // ensures unique animation per slide
       initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 1.2 } }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 1 } }}
       exit={{ opacity: 0, transition: { duration: 0.1, ease: "easeIn" } }}
       className="absolute inset-0 h-full w-full flex flex-col justify-center items-center text-center px-0 z-30"
     >

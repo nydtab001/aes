@@ -27,7 +27,7 @@ function BusinessAreas() {
                 "Affordable housing developments",
                 "Residential renovations and upgrades"
             ],
-            image: "/services/residential_project.jpg",
+            image: "/services/residential_project.webp",
             market: "Private homeowners, real estate developers, housing authorities"
         },
         {
@@ -41,7 +41,7 @@ function BusinessAreas() {
                 "Educational facilities",
                 "Healthcare and medical buildings"
             ],
-            image: "/services/commercial_project.jpg",
+            image: "/services/commercial_project.webp",
             market: "Corporate clients, retail chains, educational institutions, healthcare providers"
         },
         {
@@ -55,7 +55,7 @@ function BusinessAreas() {
                 "Chemical and pharmaceutical facilities",
                 "Power generation facilities"
             ],
-            image: "/services/industrial_project.jpg",
+            image: "/services/industrial_project.webp",
             market: "Manufacturing companies, logistics providers, energy sector, pharmaceutical industry"
         },
         {
@@ -69,7 +69,7 @@ function BusinessAreas() {
                 "Public transportation infrastructure",
                 "Municipal facilities"
             ],
-            image: "/services/civil_project.jpg",
+            image: "/services/civil_project.webp",
             market: "Government agencies, municipalities, transportation authorities, utility companies"
         },
         {
@@ -83,7 +83,7 @@ function BusinessAreas() {
                 "System upgrades and retrofits",
                 "24/7 technical support"
             ],
-            image: "/services/maintenance_image.jpg",
+            image: "/services/maintenance_image.webp",
             market: "Property management companies, facility owners, government agencies, private businesses"
         },
         {
@@ -97,7 +97,7 @@ function BusinessAreas() {
                 "Airport runway construction",
                 "Specialty surface treatments"
             ],
-            image: "/services/road_surfacing.jpg",
+            image: "/services/road_surfacing.webp",
             market: "Municipalities, transportation departments, private property owners, airport authorities"
         }
     ];

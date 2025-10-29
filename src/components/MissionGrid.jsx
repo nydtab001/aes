@@ -11,19 +11,19 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 // components/MissionGrid.tsx
 const services = [
   { icon: <FaScrewdriverWrench />, title: 'Maintenance', desc: 'Our Maintenance Division offers after-hour repairs to minimize disruption, with technicians who document work and flag potential issues—helping you stay ahead of emergencies and maintain a sharp public image.', 
-    img: '/services/maintenance_image.jpg', alt: 'Maintenance Service'
+    img: '/services/maintenance_image.webp', alt: 'Maintenance Service'
   },
   { icon: <GiHouse />, title: 'Residential', desc: 'Personalized builds, expertly managed. AE Solutions brings precision and care to every residential project, coordinating all phases with a dedicated team and premium materials—delivering homes that reflect craftsmanship, trust, and lasting quality.',
-    img: '/services/residential_project.jpg', alt: 'Residential Service'
+    img: '/services/residential_project.webp', alt: 'Residential Service'
   },
   { icon: <LiaIndustrySolid />, title: 'Industrial', desc: 'Built for performance, designed around you. AE Solutions creates industrial facilities that optimize flow, space, and operations—custom-built to support your production, logistics, and distribution needs with precision and purpose.', 
-    img: '/services/industrial_project.jpg', alt: 'Industrial Service'
+    img: '/services/industrial_project.webp', alt: 'Industrial Service'
   },
   { icon: <GiCrane />, title: 'Civil', desc: 'Smart sites, strong foundations. AE Solutions delivers expert civil engineering and site development for all project types—combining feasibility insight with thoughtful design to maximize potential and harmonize with the land.',
-    img: '/services/civil_project.jpg', alt: 'Civil Service'
+    img: '/services/civil_project.webp', alt: 'Civil Service'
    },
   { icon: <FaRoad />, title: 'Road Surfacing', desc: 'Precision paving, proven results. APS leads in road surfacing and rehabilitation, delivering high-quality work on time and to spec—powered by skilled teams who take pride in tackling every challenge with excellence.',
-    img: '/services/road_surfacing.jpg', alt: 'Road Surfacing Service'
+    img: '/services/road_surfacing.webp', alt: 'Road Surfacing Service'
    },
 ];
 
@@ -49,6 +49,7 @@ export default function MissionGrid() {
   <img
     src={s.img}
     alt={s.alt}
+    loading={i < 2 ? "eager" : "lazy"}
     className="w-full md:w-1/2 h-auto md:h-[500px] max-md:max-h-[300px] object-cover"
   />
 

@@ -19,37 +19,37 @@ function Services() {
     const services = [
         {
             title: "Facilities Maintenance",
-            image: "/services/maintenance_image.jpg",
+            image: "/services/maintenance_image.webp",
             description:
                 "Responsive, after‑hours repairs and proactive maintenance services to keep your facilities safe, attractive and operational.",
         },
         {
             title: "Residential Construction",
-            image: "/services/residential_project.jpg",
+            image: "/services/residential_project.webp",
             description:
                 "Complex residential projects handled with exceptional organizational skills and dedicated project teams for personalized service and remarkable results.",
         },
         {
             title: "Commercial Construction",
-            image: "/services/commercial_project.jpg",
+            image: "/services/commercial_project.webp",
             description:
                 "From high-end retail to public buildings and office space, we combine construction expertise with sensitivity to facility programming and operations.",
         },
         {
             title: "Industrial Projects",
-            image: "/services/industrial_project.jpg",
+            image: "/services/industrial_project.webp",
             description:
                 "Facilities designed to support your operations with dedicated listening, custom design, and support for manufacturing, logistics, and distribution systems.",
         },
         {
             title: "Civil Engineering",
-            image: "/services/civil_project.jpg",
+            image: "/services/civil_project.webp",
             description:
                 "Complete civil and site development engineering services with feasibility assessments, conceptual design, and construction administration for all project types.",
         },
         {
             title: "APS Road Surfacing",
-            image: "/services/road_surfacing.jpg",
+            image: "/services/road_surfacing.webp",
             description:
                 "Multifaceted company specializing in seals, asphalting and road rehabilitation with highly skilled teams delivering quality work on time and within specification.",
         },
@@ -83,11 +83,11 @@ function Services() {
             <title>
                 Alauwndy Engineering Solutions - Services
             </title>
-                <link rel="preload" as="image" href="/services/residential_project.jpg" />
-                <link rel="preload" as="image" href="/services/maintenance_image.jpg" />
-                <link rel="preload" as="image" href="/services/industrial_project.jpg" />
-                <link rel="preload" as="image" href="/services/civil_project.jpg" />
-                <link rel="preload" as="image" href="/services/road_surfacing.jpg" />
+                <link rel="preload" as="image" href="/services/residential_project.webp" />
+                <link rel="preload" as="image" href="/services/maintenance_image.webp" />
+                <link rel="preload" as="image" href="/services/industrial_project.webp" />
+                <link rel="preload" as="image" href="/services/civil_project.webp" />
+                <link rel="preload" as="image" href="/services/road_surfacing.webp" />
             </Helmet>
             <PageHeader />
             <SectionHeading title="SERVICES" bg="" />

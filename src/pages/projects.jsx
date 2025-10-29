@@ -200,8 +200,8 @@ Phase	Activities	Key Details
                 <title>
                     Alauwndy Engineering Solutions - Projects
                 </title>
-                <link rel="preload" as="image" href="/services/residential_project.jpg" />
-                <link rel="preload" as="image" href="/services/industrial_project.jpg" />
+                <link rel="preload" as="image" href="/services/residential_project.webp" />
+                <link rel="preload" as="image" href="/services/industrial_project.webp" />
             </Helmet>
             <PageHeader/>
             <SectionHeading title="PROJECTS" bg=""/>
