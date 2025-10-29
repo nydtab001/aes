@@ -259,60 +259,73 @@ function BusinessAreas() {
                         <Heading1
                             width="max-sm:w-0 md:w-6 lg:w-24"
                             className="lg:text-4xl md:text-3xl text-2xl bg-indigo-950 text-indigo-950 font-semibold"
-                            title="Service Areas"
+                            title="Structural Engineering"
                         />
                     </div>
-                    <div className="grid gap-8 md:grid-cols-2">
-                        {businessAreas.map((area, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, amount: 0.15 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className="group relative"
-                            >
-                                <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                                <div className="relative bg-white shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                                    <div className="aspect-[16/10] overflow-hidden bg-gray-100 relative">
-                                        <img
-                                            src={area.image}
-                                            alt={area.title}
-                                            className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                            loading="lazy"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                        <div className="absolute bottom-4 left-4 right-4">
-                                            <h3 className="text-2xl font-bold text-white mb-2">
-                                                {area.title}
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="p-6">
-                                        <p className="text-gray-600 leading-relaxed mb-6">
-                                            {area.description}
-                                        </p>
-                                        
-                                        <div className="mb-6">
-                                            <h4 className="text-lg font-semibold text-gray-900 mb-3">Services Include:</h4>
-                                            <div className="grid grid-cols-1 gap-2">
-                                                {area.services.map((service, serviceIndex) => (
-                                                    <div key={serviceIndex} className="flex items-start">
-                                                        <div className="w-2 h-2 bg-red-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                                                        <span className="text-gray-700 text-sm">{service}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
+                    <div className="max-w-5xl mx-auto">
+                        <div className="space-y-6 text-gray-700 leading-relaxed">
+                            <p className="text-lg">
+                                With most of our experiences involved in Design and Build projects, a strong culture of creativity and 
+                                innovation runs throughout the business and our emphasis on 'design for production' ensures the most 
+                                efficient and cost-effective solutions in all our well managed projects. Our technical team uses the 
+                                latest in 3D structural modelling software, together with fully capable detailers in steel fabrication 
+                                modelling and detailing. This creates a seamless process all the way from concept through to 
+                                manufacture and all of which is totally compatible with all the most advanced Building Information 
+                                Modelling (BIM) systems in use today.
+                            </p>
+                            <p className="text-lg">
+                                Our expertise everything you need under one roof, In addition to our fabrication professionals, our in-house 
+                                design resources and capabilities allow us to provide complete and custom solutions. Furthermore, our 
+                                strategic partnerships with vendors and suppliers allows us to successfully manage the unique needs of 
+                                any project.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+            </Section>
 
-                                        <div className="bg-gray-50 p-4">
-                                            <h4 className="text-sm font-semibold text-gray-900 mb-2">Target Market:</h4>
-                                            <p className="text-sm text-gray-600">{area.market}</p>
-                                        </div>
-                                    </div>
+            {/* Looking Into the Future */}
+            <Section className="bg-gray-50">
+                <motion.div
+                    variants={sectionVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.15 }}
+                    transition={reduce ? { duration: 0 } : undefined}
+                    className="max-w-7xl mx-auto"
+                >
+                    <div className="mx-auto w-fit mb-12">
+                        <Heading1
+                            width="max-sm:w-0 md:w-6 lg:w-24"
+                            className="lg:text-4xl md:text-3xl text-2xl bg-indigo-950 text-indigo-950 font-semibold"
+                            title="Looking Into the Future"
+                        />
+                    </div>
+                    <div className="max-w-5xl mx-auto">
+                        <div className="space-y-8">
+                            {/* AES Properties */}
+                            <div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">AES Properties</h3>
+                                <div className="text-gray-700 leading-relaxed text-lg">
+                                    <p>
+                                        AES Properties SBU will focus on commercial property development with a view to rent to tenants on 
+                                        completion. It creates modern, affordable commercial developments with upmarket finishes and a 
+                                        professional look and feel.
+                                    </p>
                                 </div>
-                            </motion.div>
-                        ))}
+                            </div>
+
+                            {/* AES Tech */}
+                            <div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">AES Tech</h3>
+                                <div className="text-gray-700 leading-relaxed text-lg">
+                                    <p>
+                                        This will be the technology hub of the company and it will focus more on business development 
+                                        through the use of technology, induction into telecoms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </motion.div>
             </Section>

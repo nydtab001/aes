@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <LoadingScreen isVisible={loading} />
+      {/* <LoadingScreen isVisible={loading} /> */}
 
       
         <BrowserRouter>

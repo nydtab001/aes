@@ -17,69 +17,73 @@ function Strengths() {
 
     const strengths = [
         {
-            icon: "🏗️",
-            title: "Proven Experience",
-            description: "With over 15 years of experience in the construction and engineering industry, we bring deep expertise and proven methodologies to every project.",
+            icon: "⭐",
+            title: "Differentiators",
+            description: "A unique value proposition with our global experience outlook and excellence proven by extraordinary results, we build value in the infrastructure sector to improve life for current and future generations.",
             details: [
-                "15+ years of industry experience",
-                "Successfully completed 500+ projects",
-                "Proven track record across all sectors",
-                "Established relationships with suppliers and partners"
+                "Global experience outlook",
+                "Excellence proven by extraordinary results",
+                "Building value in infrastructure sector",
+                "Improving life for current and future generations"
             ]
         },
         {
-            icon: "👥",
-            title: "Expert Team",
-            description: "Our team consists of highly qualified professionals including engineers, architects, project managers, and skilled craftsmen.",
+            icon: "📈",
+            title: "Strong Performance",
+            description: "An upcoming market leading company in the Zimbabwean infrastructure sector with strong know-how of the local market. Competence, track record, and delivery capacity are key success factors.",
             details: [
-                "Certified professional engineers",
-                "Licensed architects and designers",
-                "Experienced project managers",
-                "Skilled tradespeople and craftsmen"
+                "Upcoming market leading company in Zimbabwean infrastructure",
+                "Strong know-how of the Zimbabwean market",
+                "Successfully completed all contracts throughout company history",
+                "Many projects completed ahead of schedule",
+                "Always delivering quality products and services"
             ]
         },
         {
-            icon: "⚡",
-            title: "Advanced Technology",
-            description: "We leverage cutting-edge technology and modern equipment to deliver efficient, high-quality results on every project.",
+            icon: "🌐",
+            title: "Diversification",
+            description: "Ability to compete in a vast array of sectors with growing geographic footprint and solid operational performance in different sectors.",
             details: [
-                "State-of-the-art construction equipment",
-                "Advanced project management software",
-                "3D modeling and BIM technology",
-                "Digital collaboration tools"
+                "Ability to compete in a vast array of sectors",
+                "Growing geographic footprint",
+                "Solid operational performance in different sectors",
+                "Including highways, civil and industrial buildings and airports",
+                "Significant geographical diversification in and around the country"
             ]
         },
         {
-            icon: "🏆",
-            title: "Quality Standards",
-            description: "We maintain the highest quality standards through rigorous quality control processes and adherence to industry best practices.",
+            icon: "👔",
+            title: "Leadership",
+            description: "Relatable balance between caution and kindness with proven track record. Vast experience to tap from and the desire, passion to succeed.",
             details: [
-                "ISO 9001:2015 Quality Management System",
-                "Regular quality audits and inspections",
-                "Compliance with all safety regulations",
-                "Continuous improvement processes"
+                "Relatable balance between caution and kindness",
+                "Proven track record",
+                "Vast experience to tap from",
+                "Strong desire and passion to succeed"
             ]
         },
         {
-            icon: "💰",
-            title: "Cost Efficiency",
-            description: "Our efficient project management and procurement strategies ensure optimal cost control without compromising on quality.",
+            icon: "🛡️",
+            title: "Health & Safety",
+            description: "AE Solutions recognises that health and safety is at the core of its responsibilities. All fabrication, manufacturing and structural activities shall be performed to meet client requirements, contract specifications, and applicable regulations.",
             details: [
-                "Competitive pricing through bulk procurement",
-                "Efficient project scheduling",
-                "Waste reduction strategies",
-                "Value engineering solutions"
+                "Prevention",
+                "Compliance",
+                "Communication",
+                "Improvement",
+                "Effective actions ensure policy statements are endorsed by all employees",
+                "Adhered to and constantly improved upon"
             ]
         },
         {
-            icon: "🌱",
-            title: "Sustainability Focus",
-            description: "We are committed to sustainable construction practices that minimize environmental impact while delivering long-term value.",
+            icon: "✨",
+            title: "Quality Objectives",
+            description: "To exceed the client's expectations in all aspects – every time. The Company's quality objectives ensure that business development, procurement, fabrication, testing and inspection activities are undertaken on any given project with excellence.",
             details: [
-                "Green building certifications",
-                "Sustainable material sourcing",
-                "Energy-efficient design solutions",
-                "Waste reduction and recycling programs"
+                "Planned and performed to achieve required quality within budget and schedule",
+                "In accordance with contractual and regulatory requirements",
+                "Performed correctly the first time to ensure cost effectiveness and efficiency",
+                "Exceeding client expectations in all aspects"
             ]
         }
     ];
