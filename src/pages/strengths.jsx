@@ -89,8 +89,8 @@ function Strengths() {
     ];
 
     const achievements = [
-        { number: "500+", label: "Projects Completed", icon: "📊" },
-        { number: "15+", label: "Years Experience", icon: "⏰" },
+        { number: "25+", label: "Projects Completed", icon: "📊" },
+        { number: "5+", label: "Years Experience", icon: "⏰" },
         { number: "100%", label: "Client Satisfaction", icon: "😊" },
         { number: "50+", label: "Team Members", icon: "👥" }
     ];
