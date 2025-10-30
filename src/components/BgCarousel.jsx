@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-function ResponsiveImage({ slide }) {
+function ResponsiveImage({ slide, isFirst }) {
   const isMobile = useMediaQuery({ maxWidth: 480 });
   const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 769 });
@@ -21,8 +21,8 @@ function ResponsiveImage({ slide }) {
       src={imageSrc}
       alt={slide.alt}
       className="w-full h-full object-cover"
-      loading="eager"
-      decoding="sync"
+      loading={isFirst ? "eager" : "lazy"}
+      decoding={isFirst ? "sync" : "async"}
     />
   );
 }
@@ -75,7 +75,7 @@ function BgCarousel({ slides, children }) {
         >
             {slides.map((slide, index) => (
                 <div key={index} className={"w-full h-full flex-shrink-0"}>
-                <ResponsiveImage slide={slide} />
+                <ResponsiveImage slide={slide} isFirst={index === 0} />
                 </div>
             ))}
             {children}

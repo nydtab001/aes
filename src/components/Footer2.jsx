@@ -44,13 +44,12 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Certifications & Newsletter */}
+        {/* Tax Clearance & Compliance */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Certifications</h3>
+          <h3 className="text-lg font-semibold mb-3">Compliance</h3>
           <ul className="text-lg text-neutral-300 space-y-1">
-            <li>ISO 9001: Quality Management</li>
-            <li>Green Building Council Member</li>
-            <li>Registered with CESA</li>
+            <li>ZIMRA Tax Compliant</li>
+            <li>TIN: 2001799073</li>
           </ul>
           {/* <h3 className="text-lg font-semibold mt-6 mb-3">Newsletter</h3>
           <form className="flex flex-col space-y-2">
