@@ -11,7 +11,7 @@ function ResponsiveImage({ slide, isFirst }) {
   const isDesktop = useMediaQuery({ minWidth: 769 });
 
   const imageSrc = isMobile
-    ? slide.src2
+    ? slide.src3
     : isTablet
     ? slide.src2
     : slide.src;

@@ -24,7 +24,9 @@ function Home() {
         <title>
           Alauwndy Engineering Solutions
         </title>
-        <link rel="preload" as="image" href="backgrounds/bg1-768.webp" />
+        <link rel="preload" as="image" href="backgrounds/bg1-480.webp" media="(max-width: 480px)" />
+        <link rel="preload" as="image" href="backgrounds/bg1-768.webp" media="(min-width: 481px) and (max-width: 768px)" />
+        <link rel="preload" as="image" href="backgrounds/bg1-1280.webp" media="(min-width: 769px)" />
         <link rel="preload" as="image" href="aeslogo.png" />
       </Helmet>
     <PageHeader />
