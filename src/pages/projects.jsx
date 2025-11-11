@@ -118,7 +118,7 @@ As of 15 October 2025, Locks and Luxe Saloon in Bulawayo is completed with:
                 {
                         id: 9,
                         title: "Charcoal‑Grey Revamp — 9th Avenue & Five Street",
-                        category: "Refurbishment",
+                        category: "Maintenance",
                         image: "/projects/charcoal_grey_revamp.jpg",
                         images: [
                                 "/projects/charcoal_grey_revamp.jpg",
@@ -161,6 +161,47 @@ Phase	Activities	Key Details
                                 "Optional UV‑resistant clear protective sealer"
                         ],
                         client: "Rananga Properties"
+                },
+                {
+                        id: 10,
+                        title: "Madokero Suspended Ceiling Installation",
+                        category: "Maintenance",
+                        image: "/projects/madokero_project.jpg",
+                        images: [
+                                "/projects/madokero_project.jpg",
+                                "/projects/madokero_project2.jpg"
+                        ],
+                        shortDescription: "Revolutionary lightweight galvanized metal suspended ceiling system featuring cross tees, main tees, plaster trims, and precision corner bits.",
+                        fullDescription: `We're excited to showcase our latest project in Madokero, Harare, featuring a revolutionary new ceiling system made from lightweight galvanized metals.
+
+Key Components:
+• Cross Tees: Strong, durable, and easy to install
+• Main Tees: Robust and designed for a seamless finish
+• Plaster Trims: Perfect for a smooth, finished look
+• Corner Bits: Precision-crafted for flawless corners
+
+Project Highlights:
+This 250 square meter installation demonstrates the future of ceiling systems, combining modern aesthetics with practical benefits. The lightweight galvanized metal system offers exceptional durability while remaining easy to handle and install, significantly reducing both installation time and labor costs.
+
+Benefits:
+• Lightweight: Easy to handle and install, reducing physical strain and installation complexity
+• Durable: Long-lasting and resistant to damage, moisture, and environmental factors
+• Aesthetically Pleasing: Modern, sleek, and sophisticated design that enhances any interior
+• Cost-Effective: Reduced installation time (completed in just 18 days) and lower labor costs
+
+The project showcases our expertise in modern interior finishing solutions, delivering a ceiling system that meets both functional and aesthetic requirements while staying within budget and timeline constraints.`,
+                        endDate: "2025-10",
+                        location: "Madokero, Harare",
+                        status: "Completed",
+                        features: [
+                                "250 square meters of suspended ceiling coverage",
+                                "Lightweight galvanized metal system (cross tees, main tees)",
+                                "Precision-crafted corner bits for flawless edges",
+                                "Plaster trims for smooth, professional finish",
+                                "Completed in 18 days (rapid installation)",
+                                "Modern, sleek design with long-term durability"
+                        ],
+                        client: "Private Residential Client"
                 }
     ];
     const categories = ["All", "Residential", "Industrial", "Commercial", "Civil Engineering", "Road Surfacing", "Maintenance"];

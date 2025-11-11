@@ -76,7 +76,7 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <div className="mt-14 border-t border-neutral-700 pt-6 text-center text-md text-neutral-500">
-        &copy; {new Date().getFullYear()} AE Solutions. Built with purpose. Built by <a href="https://www.linkedin.com/in/taboka-nyadza-2a1849161/" className="underline">Taboka Nyadza</a>.
+        &copy; {new Date().getFullYear()} AE Solutions. Built with purpose. Built by <a href="https://tabokanyadza.co.zw" className="underline" target="_blank" rel="noopener noreferrer">T.C. Nyadza</a>.
       </div>
     </footer>
   );
